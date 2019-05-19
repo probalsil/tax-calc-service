@@ -1,0 +1,18 @@
+---
+applications:
+- name: taxservicecalculationV2-rabbitmq
+  host: taxservicecalculationV2-rabbitmq
+  memory: 1G
+  instances: 1
+  path: /target/taxcalculationservice-service-0.0.1-SNAPSHOT.war
+  health-check-type: process
+  buildpack: sap_java_buildpack
+  services:
+    - postgreSql
+    - rabbitmq
+  
+ 
+ 
+
+
+    
